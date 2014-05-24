@@ -3,22 +3,32 @@
 permalink: /:categories/:year/:month/:day/:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-pygments: true
+highlighter: pygments
 
 # https://help.github.com/articles/migrating-your-pages-site-from-maruku
-markdown: kramdown
+markdown: redcarpet
+
+paginate: 10 #pagination based on number of posts
+paginate_path: "page:num"
+
+excerpt_separator: <!--more-->
 
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : Christophe Labouisse
-tagline: Site Tagline
+title : Le journal de Christophe
+tagline: "Blog d'un dévelopeur indépendant: Java & développement"
 author :
   name : Christophe Labouisse
   email : consulting@labouisse.com
-  github : ggtools
+  # github : ggtools
   twitter : XtlCnslt
   # feedburner : feedname
+  linkedin: clabouisse
+  # resume: asd123
+  bio: Freelance Java expert
+  email_md5: 5a9a33e6c0397ed112a7c955728f3a1f
+
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
@@ -83,9 +93,9 @@ JB :
   # Set 'provider' to false to turn commenting off globally.
   #
   comments :
-    provider : false
+    provider : disqus
     disqus :
-      short_name : jekyllbootstrap
+      short_name : clabouisse
     # livefyre :
     #   site_id : 123
     # intensedebate :
