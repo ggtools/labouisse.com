@@ -11,6 +11,9 @@ markdown: redcarpet
 paginate: 10 #pagination based on number of posts
 paginate_path: "page:num"
 
+# Do not publish posts in the future
+future: false
+
 excerpt_separator: <!--more-->
 
 # Themes are encouraged to use these universal variables
