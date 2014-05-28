@@ -3,7 +3,7 @@ layout: post
 title: "Retour sur Lombok"
 description: ""
 category: libraries
-tags: [java, en français, quicky]
+tags: [java, en français, lombok]
 ---
 {% include JB/setup %}
 
