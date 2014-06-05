@@ -36,7 +36,8 @@ I had a small issue here with the `readInternal` method. Initially I wanted to p
 Then in the rest client I have to add my converter:
 
 ```java
-@Rest(converters = {VideoHttpMessageConverter.class, MappingJackson2HttpMessageConverter.class})
+@Rest(converters = {VideoHttpMessageConverter.class,
+                    MappingJackson2HttpMessageConverter.class})
 @Accept(MediaType.APPLICATION_JSON)
 public interface MyRestClient extends RestClientRootUrl {
 ```
