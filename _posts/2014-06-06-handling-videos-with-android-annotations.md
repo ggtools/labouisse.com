@@ -40,4 +40,6 @@ Then in the rest client I have to add my converter:
                     MappingJackson2HttpMessageConverter.class})
 @Accept(MediaType.APPLICATION_JSON)
 public interface MyRestClient extends RestClientRootUrl {
+    // Not change to the class body
+}
 ```
