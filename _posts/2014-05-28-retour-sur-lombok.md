@@ -36,11 +36,11 @@ n'aura pas de restriction d'accès.
 
 Sans Lombok, en générant les méthodes avec IntelliJ, la classe ressemblera à ça :
 
-<script src="https://gist.github.com/ggtools/7d8cbfbbc5f0f615edc8.js"></script>
+{% gist ggtools/7d8cbfbbc5f0f615edc8 %}
 
 Avec Lombok la classe se réduira à :
 
-<script src="https://gist.github.com/ggtools/e215f4e7e68c0a1a88bf.js"></script>
+{% gist ggtools/e215f4e7e68c0a1a88bf %}
 
 On voit tout de suite que Lombok gagne sur le plan de la lisibilité en permettant
 d'avoir un code qui n'est pas les accesseurs et autres.
