@@ -91,6 +91,6 @@ Using this `Dockerfile` you'll only need to copy your restx archive to `/tmp/res
 
 ## Results
 
-First impression: this is blazing fast as it only take 5 seconds to create the container and launch the application. I admit this is not a big application and this is a startup time which is on par with using a war from Tomcat.
+First impression: this is blazing fast as it only take 5 seconds to create the container and launch the application. I admit this is not a big application but this is way better than deploying a war on a recent tomcat.
 
 My only issue is that the creation of the application image is really slow as restx needs to fetch the dependencies at this time. This is a waste of time as the dependencies had most probably already been fetched on the developement/build environment. Creating an executable jar at build time would probably be more efficient.
