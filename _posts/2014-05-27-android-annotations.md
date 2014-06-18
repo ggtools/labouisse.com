@@ -3,7 +3,7 @@ layout: post
 title: "Android Annotations"
 description: ""
 category: android
-tags: [java, android, en français]
+tags: [java, android, français]
 ---
 {% include JB/setup %}
 J'ai commencé il y a quelques semaines le développement Android et je suis tombé sur une bibliothèque carrément sympa pour simplifier le développement Android : [Android Annotations](https://github.com/excilys/androidannotations/wiki).

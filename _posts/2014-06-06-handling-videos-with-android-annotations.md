@@ -3,7 +3,7 @@ layout: post
 title: "Handling videos with Android Annotations"
 description: ""
 category: how-to
-tags: android, java, in english, spring, rest
+tags: [android, java, english, spring, rest]
 ---
 {% include JB/setup %}
 Following my post on [Handling videos with RESTX]({% post_url 2014-06-03-handling-videos-with-restx %}) here is the client counterpart. I have server handling both *classical* REST calls and video operations. On the client side I already have the rest client implemented using [Spring Android](http://projects.spring.io/spring-android/) wrapped by [Android Annotations]({% post_url 2014-05-27-android-annotations %}). As I did on the server side I want to use the same system to handle both REST calls and video transfers.

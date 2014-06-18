@@ -3,7 +3,7 @@ layout: post
 title: "Handling videos with RESTX"
 description: "How I twist the arm of restx to work with videos"
 category: how-to
-tags: [java, in english, restx, mongodb, rest]
+tags: [java, english, restx, mongodb, rest]
 ---
 {% include JB/setup %}
 [RESTX](http://restx.io) is a great REST framework. Easy to learn and to use, fast, well documented and actively developed this is definitely worth a look if you are looking to make a REST application. I started a REST application which needed to upload and download videos which is not supported by restx, at least in version `0.33.1`.
