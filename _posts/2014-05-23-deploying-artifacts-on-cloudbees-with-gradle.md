@@ -108,7 +108,7 @@ uploadArchives {
 ### Credentials
 
 This configuration will be working but there a need to supply the credentials
-to make it work. [AppSatori] choose to but those credentials directly in the
+to make it work. [AppSatori] choose to put those credentials directly in the
 `build.gradle` file by adding at the beginning:
 
 ```groovy
@@ -122,7 +122,8 @@ onto the git repository.
 #### Jenkins passwords
 
 Jenkins supports the injection of passwords when running the grade script. To
-do this you have to activate *Inject passwords to the build as environment variables*
+do this you have to install the [EnvInject](https://wiki.jenkins-ci.org/display/JENKINS/EnvInject+Plugin)
+and then activate *Inject passwords to the build as environment variables*
 in the *Build environment* section of you job configuration:
 
 ![Inject passwords](/images/2014-05-23-003_Inject-passwords.png)
