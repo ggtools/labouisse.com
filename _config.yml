@@ -114,12 +114,12 @@ JB :
   # Set 'provider' to false to turn analytics off globally.
   #
   analytics :
-    provider : google
-    google :
+    provider : googleUA
+    # google :
+    #     tracking_id : 'UA-38514880-1'
+    googleUA :
         tracking_id : 'UA-38514880-1'
-    # googleUA :
-    #     tracking_id : 'UA-***'
-    #     property_name : 'PROPERTY NAME'
+        property_name : 'labouisse.com'
     # getclicky :
     #   site_id :
     # mixpanel :
