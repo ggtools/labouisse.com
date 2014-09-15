@@ -16,7 +16,7 @@ One of Frédéric de Villamil's concerns was the size of the Docker images: *you
 At the moment there are a couples of base images for Java 8 applications out there. I guess the most popular are [dockerfile/java](https://registry.hub.docker.com/u/dockerfile/java/) and the *[official one](https://registry.hub.docker.com/_/java/)*. Let's have a look at those images.
 
 Image|From|Size
-----------------
+-----|----|-----
 dockerfile/java:oracle-java8|dockerfile/ubuntu|917.7 MB
 java:8|debian:experimental|692.2 MB
 dgageot/java8|dgageot/busybox-ubuntu|201.7 MB
