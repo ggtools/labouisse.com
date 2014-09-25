@@ -11,7 +11,7 @@ description: "Présentation au Bordeaux JUG le 22 mai 2014"
 À l'occasion du premier [Ippevent](http://blog.ippon.fr/inscription-aux-ippevents/) organisé sur Bordeaux [Ippon](http://www.ippon.fr/) avait invité [Tugdual Grall](https://twitter.com/tgrall) pour une présentation de MongoDB. Devant une salle comble composée en majorité de développeurs Java JEE,  Tugdual s'est livré à une présentation de deux heures qui s'est rapidement éloignée des slides au fil des questions du public. Mon résumé de faux débutant :
 
 <!--more-->
-En début de présentation Tugdual a indiqué que le principal problème lors de l’adoption de NoSQL pour les dév est la culture en base des données relationnelles. Lapidaire mais au final pas faux du tout.
+En début de présentation Tugdual a indiqué que le principal problème lors de l’adoption de NoSQL pour les dév est la culture en base des données relationnelles. Lapidaire mais après avoir assisté à la conférence je trouve que cela résume bien mes expériences avec MongoDB.
 
 ## La diversité en NoSQL
 
@@ -40,4 +40,19 @@ Au technique intéressante : celle du *bucketing*. Dans l'exemple donné, on ima
 
 Pour terminer sur le sujet des données il est évident que l'absence de vérification de l'intégrité référentielle déplace cette fonctionnalité côté applicatif.
 
-## La réplication aussi
+## Clustering
+
+Dans la plupart des SGBD relationnels il n'est possible de faire de la haute-disponiblité ou de la répartition de charge sans devoir ajouter quelque chose au SGBD en lui même. MongoDB intègre ces fonctionnalités directement :
+
+- haute-disponibilité via un système de réplication avec un système actif/passif
+- repartition de charge grâce au *[sharding](http://docs.mongodb.org/manual/core/sharding-introduction/)* qui va répartir les différents documents sur des instances ou des clusters différents.
+
+Dans ce dernier système, la répartition s'effectuant à partir d'une clé de sharding il est important de choisir celle-ci en fonction des besoins. L'exemple pris est celui d'une base de clients que l'on interroge souvent en fonction de leur pays : un clé aléatoire (numéro de client) obligera à interroger l'ensemble des instances alors qu'une clé passé sur la région (US, Europe, etc.) permettrait de ne s'adresser qu'à un sous-ensemble des instances.
+
+## En vrac
+
+Le shell de Mongo est en Javascript on peut donc créer des variables, des fonctions, etc. Pour qui a dû souffrir avec SQL*Plus c'est un soulagement.
+
+Les write-concerns peuvent être utiliser pour choisir un compromis vitesse/sécurité au niveau de chaque requête. Par exemple utiliser le write-concern par défault qui ne garanti que l'écriture sur le primaire lorsqu'un client ajoute un article à son panier mais utiliser un write-concern *majority* qui va garantir l'écriture sur la majorité des instances pour le passage de la commande.
+
+MongoDB supporte des données et des opérateurs géographiques. Plus de détails sur [le blog de Tugdual](http://tugdualgrall.blogspot.fr/2014/08/introduction-to-mongodb-geospatial.html).
