@@ -3,6 +3,7 @@ layout: post
 title: "Retour sur Lombok"
 description: "Courte introduction à Lombok."
 category: libraries
+lang: fr
 tags: [java, français, lombok]
 ---
 {% include JB/setup %}

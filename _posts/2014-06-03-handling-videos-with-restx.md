@@ -3,6 +3,7 @@ layout: post
 title: "Handling videos with RESTX"
 description: "How I twist the arm of restx to work with videos"
 category: how-to
+lang: en
 tags: [java, english, restx, mongodb, rest]
 ---
 {% include JB/setup %}

@@ -3,6 +3,7 @@ layout: post
 title: "Docker and Restx"
 description: "My Docker images for rest applications"
 category: how-to
+lang: en
 tags: [java, restx, english, docker]
 ---
 {% include JB/setup %}

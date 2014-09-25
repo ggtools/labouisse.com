@@ -3,6 +3,7 @@ layout: post
 title: "Handling videos with Android Annotations"
 description: "My solution to handle videos through REST using Android Annotations"
 category: how-to
+lang: en
 tags: [android, java, english, spring, rest]
 ---
 {% include JB/setup %}

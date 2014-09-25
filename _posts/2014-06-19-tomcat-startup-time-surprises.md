@@ -3,6 +3,7 @@ layout: post
 title: "Tomcat startup time surprises"
 description: "Tomcat can be slow to start, sometime"
 category: misc
+lang: en
 tags: tomcat, entropy, docker, english
 ---
 {% include JB/setup %}

@@ -4,7 +4,7 @@ title: "Ippevent MongoDB à Bordeaux"
 description: "Premier ippevent à Bordeaux avec Tugdual Grall"
 category: talks
 tags: [mongodb, français, tgrall, ippevent]
-description: "Présentation au Bordeaux JUG le 22 mai 2014"
+lang: fr
 ---
 {% include JB/setup %}
 

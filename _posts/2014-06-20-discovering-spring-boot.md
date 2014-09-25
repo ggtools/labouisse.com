@@ -3,6 +3,7 @@ layout: post
 title: "Discovering Spring Boot"
 description: "My first feedback after attending a conference on Springboot"
 category: libraries
+lang: en
 tags: [java, english, spring, spring_boot]
 ---
 {% include JB/setup %}

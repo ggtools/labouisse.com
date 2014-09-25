@@ -3,6 +3,7 @@ layout: post
 title: "Gradle Provided Scope and IntelliJ"
 description: "A provided scope for Gradle working correctly with IntelliJ"
 category: how-to
+lang: en
 tags: [gradle, english, provided, scope, intellij, dependencies]
 ---
 {% include JB/setup %}

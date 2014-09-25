@@ -3,6 +3,7 @@ layout: post
 title: "Sometime size matters"
 description: "or: Why you should choose wisely your base image"
 category: how-to
+lang: en
 tags: [java, restx, english, docker, linux]
 ---
 {% include JB/setup %}
