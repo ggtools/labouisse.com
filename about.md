@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "About"
-description: ""
+description: "Me and my blog"
 ---
 {% include JB/setup %}
 
@@ -11,9 +11,9 @@ description: ""
 <span itemprop="affiliation">freelance</span> : développement, Agile, sécurité,
 Unix (Linux, BSD & Mac OSX), serial geek.</p>
 <br>
-<p><span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">Basé
-sur <span itemprop="locality">Bordeaux</span>, mobile pour des missions courtes.
-CV, disponibilités & références sur demande.</p>
+
+<span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">Basé
+sur <span itemprop="locality">Bordeaux</span>, mobile pour des missions courtes. CV, disponibilités & références sur demande.
 </div>
 
 Living in Bordeaux, will travel for short missions. Resume, availability &

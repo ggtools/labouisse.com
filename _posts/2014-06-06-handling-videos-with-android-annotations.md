@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Handling videos with Android Annotations"
-description: ""
+description: "My solution to handle videos through REST using Android Annotations"
 category: how-to
 tags: [android, java, english, spring, rest]
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Discovering Spring Boot"
-description: ""
+description: "My first feedback after attending a conference on Springboot"
 category: libraries
 tags: [java, english, spring, spring_boot]
 ---

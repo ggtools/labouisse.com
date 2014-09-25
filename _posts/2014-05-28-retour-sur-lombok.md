@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Retour sur Lombok"
-description: ""
+description: "Courte introduction à Lombok."
 category: libraries
 tags: [java, français, lombok]
 ---
