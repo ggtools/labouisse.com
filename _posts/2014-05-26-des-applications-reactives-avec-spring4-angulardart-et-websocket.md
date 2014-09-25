@@ -3,7 +3,7 @@ layout: post
 title: "Des applications réactives avec Spring4, AngularDart & Websocket"
 description: "Présentation au Bordeaux JUG le 22 mai 2014"
 category: talks
-tags: [java, spring, dart, angular, websocket, html5, jug, français]
+tags: [java, spring, dart, angular, websocket, html5, jug, mongodb, français]
 ---
 {% include JB/setup %}
 
