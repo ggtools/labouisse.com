@@ -38,4 +38,4 @@ So added `-Djava.security.egd=file:/dev/urandom` on the command line and everyth
 
 ## random or urandom?
 
-In development environment I think it won't harm to use `/dev/urandom` instead of `/dev/random` especially if those kind of issues had been observed before. However I will recommend to keep the default `/dev/random` in production environment.
+`[Update on 2014/11/02]` I original wrote that `/dev/urandom` was ok in a development or test environment but that `/dev/random` should be the choice in production. After a discussion on this topic on Twitter it appears that there is no sensible reason to keep using `/dev/random` for the purpose of initializing Tomcat PRNG. This [great article](http://www.2uo.de/myths-about-urandom/) contains everything you need to understand why `/dev/urandom` is secure enough for Tomcat PRNG initialization.
