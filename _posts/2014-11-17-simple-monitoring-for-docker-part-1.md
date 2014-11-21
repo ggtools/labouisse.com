@@ -82,4 +82,4 @@ While some datar such as the memory usage or the ip address are directly *usable
 
 The worst part of it is the retrieval of the network activity which is a little bit *hackish*. While I loved the used of the `ifconfig` command I found out that some images (like the official Mongo image) does not provide the command hence the fallback to the `/sys` hierarchy. A cleaner solution would be to query the virtual interface from the host but at the moment there is no easy way to retrieve the virtual interface assigned to a container unless I missed something.
 
-Next part: put everything together in Zabbix.
+Next part: [put everything together in Zabbix]({% post_url 2014-11-18-simple-monitoring-for-docker-part-2 %}).
