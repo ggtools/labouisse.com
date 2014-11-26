@@ -67,6 +67,9 @@ In order to collect those metrics I created the following python script:
 
 {% gist ggtools/50e7b76de9649ae7140f %}
 
+Since I'm using the Docker Python API you should install it before running the script:
+
+    pip install docker-py
 
 ## Conclusion of Part I
 
