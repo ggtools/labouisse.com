@@ -6,11 +6,7 @@ category: talks
 lang: fr
 tags: [java, spring, dart, angular, websocket, html5, jug, mongodb, français]
 ---
-{% include JB/setup %}
-
 [Sébastien Deleuze](https://twitter.com/sdeleuze) était l'invité du Bordeaux JUG le 22 mail dernier pour sa présentation de Devoxx France : *des applications réactives avec Spring4, AngularDart & Websocket*. Il va sans dire que la présentation était très dense et très intéressante. En quelques mots Sébastien détaillait le développement d'une application HTML5 **réactive**, performante avec de la vidéo, une communication bidirectionnelle entre client et serveur et une stack qui donne envie de l'utiliser.
-
-<!--more-->
 
 L'application choisie pour illustrer la présentation était une clone de Snapchat : [Opensnap](http://opensnap.io) dont le source est disponible sur [github](https://github.com/sdeleuze/opensnap). Pour que l'application soit réactive, l'implémentation était asynchrone non-bloquante de bout en bout. Pour parvenir à ça Sébastien a mis en place la stack suivante :
 

@@ -6,9 +6,7 @@ category: how-to
 lang: en
 tags: [java, english, restx, mongodb, rest]
 ---
-{% include JB/setup %}
 [RESTX](http://restx.io) is a great REST framework. Easy to learn and to use, fast, well documented and actively developed this is definitely worth a look if you are looking to make a REST application. I started a REST application which needed to upload and download videos which is not supported by restx, at least in version `0.33.1`.
-<!--more-->
 
 ## The Problem
 
@@ -16,7 +14,7 @@ In a nutshell I already have a client and RESTX server and I wanted to add the a
 
 A naive implementation could be:
 
-```java
+{% highlight java %}
 @Component
 @RestxResource
 @PermitAll
@@ -34,7 +32,7 @@ public class VideoResource {
         return repo.getVideo(videoId);
     }
 }
-```
+{% endhighlight %}
 
 When calling the `GET` I got the following stackstrace:
 
@@ -56,7 +54,7 @@ This is not unexpected as RESTX is handling only JSON payloads. So my solution w
 
 First part is to create a custom Router for the video stuff:
 
-```java
+{% highlight java %}
 @Component
 public class VideoRouter extends RestxRouter {
     public VideoRouter(EntityRequestBodyReaderRegistry readerRegistry, EntityResponseWriterRegistry writerRegistry, VideoResource videoResource) {
@@ -66,7 +64,7 @@ public class VideoRouter extends RestxRouter {
         );
     }
 }
-```
+{% endhighlight %}
 
 ### PutVideoRoute
 
@@ -84,7 +82,7 @@ The magic is on line 10 to 15 where we just copy the video stream to the respons
 
 RESTX provides a good support for MongoDB through the Jongo library. I implemented the video repository using Grid FS:
 
-```java
+{% highlight java %}
 @Component
 public class JongoVideoRepository {
 
@@ -105,4 +103,14 @@ public class JongoVideoRepository {
         return file == null ? null : file.getInputStream();
     }
 }
-```
+{% endhighlight %}
+
+<section id="table-of-contents" class="toc">
+<header>
+<h3>Overview</h3>
+</header>
+<div id="drawer" markdown="1">
+*  Auto generated table of contents
+{:toc}
+</div>
+</section><!-- /#table-of-contents -->

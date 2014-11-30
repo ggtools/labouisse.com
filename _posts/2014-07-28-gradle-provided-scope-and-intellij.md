@@ -6,15 +6,13 @@ category: how-to
 lang: en
 tags: [gradle, english, provided, scope, intellij, dependencies]
 ---
-{% include JB/setup %}
 While Gradle is a great building tool some concepts natural to a Maven user are not (yet ?) part of the basic package. One of them is the *provided* scope.
 
-<!--more-->
 Gradle is very flexible and this missing feature is quite easy to implement: Google *gradle and provided scope* will give you many hints on how to implement this. However when it comes to make it works with IntelliJ Gradle plugin things can be a little bit more complicated.
 
 After some *try and fail* cycles I came to the configuration below that works fine with IntelliJ:
 
-```groovy
+{% highlight css %}
 apply plugin: 'idea'
 
 configurations {
@@ -35,6 +33,6 @@ idea {
 dependencies {
     provided("org.projectlombok:lombok:1.12.6")
 }
-```
+{% endhighlight %}
 
 It is working with Gradle 2.0 and IntelliJ 13.1.4 and in the project structure, the compile and provided dependencies are correctly configured.

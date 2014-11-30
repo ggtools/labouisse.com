@@ -5,10 +5,8 @@ description: "How to simply monitor Docker containers with a set of simple scrip
 category: how-to
 tags: [english, docker, zabbix, monitoring, shell, python]
 ---
-{% include JB/setup %}
 Migrating from VMs to Docker containers is quite easy except for the monitoring part. A straightforward approach, running a data collecting agent (such as [Zabbix](http://www.zabbix.com) agent), is definitely a not a good solution as it goes against Docker's philosophy of having one clearly identified task in each container and also because it will require to use custom images. Starting with [Gathering LXC and Docker Containers Metrics](http://blog.docker.com/2013/10/gathering-lxc-docker-containers-metrics/) I came to a simple script based system to gather metrics from Docker containers.
 
-<!--more-->
 I'm using Zabbix to aggregates the performance metrics so the scripts will be designed to be used in a Zabbix agent [user parameter](https://www.zabbix.com/documentation/2.4/manual/config/items/userparameters). A user parameter is basically a script run by Zabbix and returning some information. User parameters have to be defined in the agent configuration file but may receive arguments in order to multiple informations from single script.
 
 In spite of being created with Zabbix in mind the rest of this post should be applicable to pretyy much any decent monitoring system.
@@ -27,7 +25,7 @@ Below is a straightforward shell implementation:
 
 After some Zabbix configuration this leads to a graph looking like this on my box:
 
-![Number of containers](/images/2014-11-17-001_Number-of-containers.png)
+![Number of containers]({{ site.url }}/images/2014-11-17-001_Number-of-containers.png)
 
 Since I have 9 containers running permanently, 3 data containers and one container started by cron every hour this is consistent with my expectations.
 
@@ -86,3 +84,13 @@ While some datar such as the memory usage or the ip address are directly *usable
 The worst part of it is the retrieval of the network activity which is a little bit *hackish*. While I loved the used of the `ifconfig` command I found out that some images (like the official Mongo image) does not provide the command hence the fallback to the `/sys` hierarchy. A cleaner solution would be to query the virtual interface from the host but at the moment there is no easy way to retrieve the virtual interface assigned to a container unless I missed something.
 
 Next part: [put everything together in Zabbix]({% post_url 2014-11-18-simple-monitoring-for-docker-part-2 %}).
+
+<section id="table-of-contents" class="toc">
+<header>
+<h3>Overview</h3>
+</header>
+<div id="drawer" markdown="1">
+*  Auto generated table of contents
+{:toc}
+</div>
+</section><!-- /#table-of-contents -->

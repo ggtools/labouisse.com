@@ -5,11 +5,7 @@ description: "How Mongo DB access performance can be impacted by the way you acc
 category: libraries
 tags: [english, mongodb, spring, spring_data, java, update]
 ---
-{% include JB/setup %}
-
 [Spring Data](http://projects.spring.io/spring-data/) is a nice system to create repository without having to write a single line of code beyond an interface declaration. What's extra-nice is that Spring Data can work with different underlying persistence systems like JPA or MongoDB. I know Spring Data JPA to be quite effective but since RDMBS and Mongo DB are really different I wanted to see how Spring Data behaved with Mongo DB.
-
-<!--more-->
 
 ## Being Amazon.com
 
@@ -121,10 +117,20 @@ for (int i = 0; i < 40; i++) {
 
 I ran the test on my laptop using a database running locally. The Spring Data implementation took more that one minute to run while the Mongo Operations implementation did finish in less than 3 seconds.
 
-![Results](/images/2014-09-27-001_Results.png)
+![Results]({{ site.url }}/images/2014-09-27-001_Results.png)
 
 As the time to update the document is roughly proportional to the document size it seems that Spring Data is sending the complete object to MongoDB each time an update is required. On a remote database, the results will be also impacted by the network speed. On the other end, the low level implementation has a constant response time regardless of the number of reviews in the item.
 
 ## Conclusion
 
 As I wrote above, the scenario is a little bit *naive* to be a real world scenario. However it shows that MongoDB is actually quite efficient to push new information at the end of an array and also that operations with Spring Data can be suboptimal when dealing with large and complex documents. That does not mean that Spring Data Mongo should not be used but you have to be extra-careful with it and in some cases use some low level API ([Jongo](http://jongo.org/) is a pretty nice one) to take advantage of all MongoDB features.
+
+<section id="table-of-contents" class="toc">
+<header>
+<h3>Overview</h3>
+</header>
+<div id="drawer" markdown="1">
+*  Auto generated table of contents
+{:toc}
+</div>
+</section><!-- /#table-of-contents -->

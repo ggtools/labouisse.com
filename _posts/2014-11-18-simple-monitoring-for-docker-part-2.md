@@ -5,10 +5,8 @@ description: "How to simply monitor Docker containers with a set of simple scrip
 category: how-to
 tags: [english, docker, zabbix, monitoring, shell, python]
 ---
-{% include JB/setup %}
 After the [first part]({% post_url 2014-11-17-simple-monitoring-for-docker-part-1 %}) we now have a couple of scripts able to extract some metrics from Docker containers. The next part will be to configure Zabbix to make use of those scripts to gather data and make awesome graphs.
 
-<!--more-->
 ## Zabbix Infrastructure
 
 ### Zabbix Server
@@ -34,7 +32,7 @@ UserParameter=docker.container.helper[*],/usr/local/bin/containerHelper.py $1 $2
 
 After restarting the agent you will be able to declare new *items* using one of the two scripts. For instance the number of running containers:
 
-![Number of running containers item ](/images/2014-11-18-001_Item-running-containers.png)
+![Number of running containers item ]({{ site.url }}/images/2014-11-18-001_Item-running-containers.png)
 
 Then again if everything is allright, data should start flowing into Zabbix and you can start to create nice graphs.
 
@@ -42,7 +40,7 @@ Then again if everything is allright, data should start flowing into Zabbix and 
 
 Adding the metrics from the `containerHelper` script will be done in the same way except that I'm going to create a [template](/downloads/2014-11-18-001_zbx_export_templates.xml) and declare all the metrics into it. For instance:
 
-![User CPU usage for a container](/images/2014-11-18-002_Item-container-user-cpu.png)
+![User CPU usage for a container]({{ site.url }}/images/2014-11-18-002_Item-container-user-cpu.png)
 
 A bunch of things are worth noticing:
 
@@ -55,7 +53,7 @@ A bunch of things are worth noticing:
 
 The last part will be to create a host for every container we want to monitor:
 
-![Number of running containers item](/images/2014-11-18-003_Host-minecraft-server.png)
+![Number of running containers item]({{ site.url }}/images/2014-11-18-003_Host-minecraft-server.png)
 
 Then again the important points are:
 
@@ -65,7 +63,7 @@ Then again the important points are:
 
 At this point Zabbix will start collecting data and after a while you'll be able to enjoy some nice graphs:
 
-![CPU Usage of Minecraft Server container](/images/2014-11-18-004_Graph-minecraft-server-cpu.png)
+![CPU Usage of Minecraft Server container]({{ site.url }}/images/2014-11-18-004_Graph-minecraft-server-cpu.png)
 
 ## Conclusion
 
@@ -74,3 +72,13 @@ Integration of the monitoring scripts into Zabbix was done with few simple confi
 - adding a containers requires only minimal configuration
 - the mechanism is flexible and can be extended easily to collect data about IOs
 - everything with the exception of the Zabbix agent installed on the Docker host is running in a container which is übercool
+
+<section id="table-of-contents" class="toc">
+<header>
+<h3>Overview</h3>
+</header>
+<div id="drawer" markdown="1">
+*  Auto generated table of contents
+{:toc}
+</div>
+</section><!-- /#table-of-contents -->

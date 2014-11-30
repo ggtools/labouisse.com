@@ -6,9 +6,8 @@ category: misc
 lang: en
 tags: [tomcat, entropy, docker, english]
 ---
-{% include JB/setup %}
 While testing [Spring Boot](http://projects.spring.io/spring-boot/) I came on a very strange result: it was faster to start Spring Boot's *Hello World!* from a minimal Docker image than directly from the command line. I know that Docker is using containers which are way faster than full fledged virtual machines, it didn't make sense especially considering than on Mac OS X, the Docker daemon runs in a virtual machine.
-<!--more-->
+
 I tried on a Dédibox and the first time I ran the application from Docker I got:
 
     Started Example in 4.44 seconds (JVM running for 5.197)
@@ -39,3 +38,13 @@ So added `-Djava.security.egd=file:/dev/urandom` on the command line and everyth
 ## random or urandom?
 
 `[Update on 2014/11/02]` I original wrote that `/dev/urandom` was ok in a development or test environment but that `/dev/random` should be the choice in production. After a discussion on this topic on Twitter it appears that there is no sensible reason to keep using `/dev/random` for the purpose of initializing Tomcat PRNG. This [great article](http://www.2uo.de/myths-about-urandom/) contains everything you need to understand why `/dev/urandom` is secure enough for Tomcat PRNG initialization.
+
+<section id="table-of-contents" class="toc">
+<header>
+<h3>Overview</h3>
+</header>
+<div id="drawer" markdown="1">
+*  Auto generated table of contents
+{:toc}
+</div>
+</section><!-- /#table-of-contents -->

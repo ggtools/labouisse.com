@@ -6,8 +6,6 @@ category: talks
 tags: [mongodb, français, tgrall, ippevent]
 lang: fr
 ---
-{% include JB/setup %}
-
 À l'occasion du premier [Ippevent](http://blog.ippon.fr/inscription-aux-ippevents/) organisé sur Bordeaux [Ippon](http://www.ippon.fr/) avait invité [Tugdual Grall](https://twitter.com/tgrall) pour une présentation de MongoDB. Devant une salle comble composée en majorité de développeurs Java JEE,  Tugdual s'est livré à une présentation de deux heures qui s'est rapidement éloignée des slides au fil des questions du public. Mon résumé de faux débutant :
 
 <!--more-->
@@ -56,3 +54,13 @@ Le shell de Mongo est en Javascript on peut donc créer des variables, des fonct
 Les write-concerns peuvent être utiliser pour choisir un compromis vitesse/sécurité au niveau de chaque requête. Par exemple utiliser le write-concern par défault qui ne garanti que l'écriture sur le primaire lorsqu'un client ajoute un article à son panier mais utiliser un write-concern *majority* qui va garantir l'écriture sur la majorité des instances pour le passage de la commande.
 
 MongoDB supporte des données et des opérateurs géographiques. Plus de détails sur [le blog de Tugdual](http://tugdualgrall.blogspot.fr/2014/08/introduction-to-mongodb-geospatial.html).
+
+<section id="table-of-contents" class="toc">
+<header>
+<h3>Overview</h3>
+</header>
+<div id="drawer" markdown="1">
+*  Auto generated table of contents
+{:toc}
+</div>
+</section><!-- /#table-of-contents -->

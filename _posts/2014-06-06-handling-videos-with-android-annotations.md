@@ -6,13 +6,11 @@ category: how-to
 lang: en
 tags: [android, java, english, spring, rest]
 ---
-{% include JB/setup %}
 Following my post on [Handling videos with RESTX]({% post_url 2014-06-03-handling-videos-with-restx %}) here is the client counterpart. I have server handling both *classical* REST calls and video operations. On the client side I already have the rest client implemented using [Spring Android](http://projects.spring.io/spring-android/) wrapped by [Android Annotations]({% post_url 2014-05-27-android-annotations %}). As I did on the server side I want to use the same system to handle both REST calls and video transfers.
-<!--more-->
 
 Using Android annotations, the rest client will look like this:
 
-```java
+{% highlight java %}
 @Rest(converters = {MappingJackson2HttpMessageConverter.class})
 @Accept(MediaType.APPLICATION_JSON)
 public interface MyRestClient extends RestClientRootUrl {
@@ -26,7 +24,7 @@ public interface MyRestClient extends RestClientRootUrl {
     @Accept("video/mp4")
     File getVideo(String videoId);
 }
-```
+{% endhighlight %}
 
 The issue I face with this naive implementation is the same I faced on the server side: Jackson is trying to process the video stream. The solution I used was to create a custom `HttpMessageConverter` for the video stream.
 
@@ -36,11 +34,21 @@ I had a small issue here with the `readInternal` method. Initially I wanted to p
 
 Then in the rest client I have to add my converter:
 
-```java
+{% highlight java %}
 @Rest(converters = {VideoHttpMessageConverter.class,
                     MappingJackson2HttpMessageConverter.class})
 @Accept(MediaType.APPLICATION_JSON)
 public interface MyRestClient extends RestClientRootUrl {
     // Not change to the class body
 }
-```
+{% endhighlight %}
+
+<section id="table-of-contents" class="toc">
+<header>
+<h3>Overview</h3>
+</header>
+<div id="drawer" markdown="1">
+*  Auto generated table of contents
+{:toc}
+</div>
+</section><!-- /#table-of-contents -->
