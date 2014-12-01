@@ -10,19 +10,20 @@ tags: [java, spring, dart, angular, websocket, html5, jug, mongodb, en français
 
 L'application choisie pour illustrer la présentation était une clone de Snapchat : [Opensnap](http://opensnap.io) dont le source est disponible sur [github](https://github.com/sdeleuze/opensnap). Pour que l'application soit réactive, l'implémentation était asynchrone non-bloquante de bout en bout. Pour parvenir à ça Sébastien a mis en place la stack suivante :
 
-Côté serveur :
-- Java 8
-- Spring framework 4
-- Spring boot
-- Mongo DB
+- Côté serveur :
+  - Java 8
+  - Spring framework 4
+  - Spring boot
+  - Mongo DB
 
-Côté client :
-- Dart
-- AngularDart
-- SockJS
-- HTML5
+- Côté client :
+  - Dart
+  - AngularDart
+  - SockJS
+  - HTML5
 
 Auxquels on ajoutera :
+
 - Communication par Websocket
 - Stomp
 - Gradle pour le build
