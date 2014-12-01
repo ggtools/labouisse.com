@@ -4,7 +4,7 @@ title: "Retour sur Lombok"
 description: "Courte introduction à Lombok."
 category: libraries
 lang: fr
-tags: [java, français, lombok]
+tags: [java, en français, lombok]
 ---
 Parmis les projets que j'affectionne il y a [Lombok](http://www.projectlombok.org). En quelques mots, Lombok se charge d'écrire à votre place certaines parties du code qui, bien qu'indispensables, ne sont pas particulièrement enrichissantes à écrire.
 

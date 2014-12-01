@@ -4,7 +4,7 @@ title: "Des applications réactives avec Spring4, AngularDart & Websocket"
 description: "Présentation au Bordeaux JUG le 22 mai 2014"
 category: talks
 lang: fr
-tags: [java, spring, dart, angular, websocket, html5, jug, mongodb, français]
+tags: [java, spring, dart, angular, websocket, html5, jug, mongodb, en français]
 ---
 [Sébastien Deleuze](https://twitter.com/sdeleuze) était l'invité du Bordeaux JUG le 22 mail dernier pour sa présentation de Devoxx France : *des applications réactives avec Spring4, AngularDart & Websocket*. Il va sans dire que la présentation était très dense et très intéressante. En quelques mots Sébastien détaillait le développement d'une application HTML5 **réactive**, performante avec de la vidéo, une communication bidirectionnelle entre client et serveur et une stack qui donne envie de l'utiliser.
 

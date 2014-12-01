@@ -4,7 +4,7 @@ title: "Gradle Provided Scope and IntelliJ"
 description: "A provided scope for Gradle working correctly with IntelliJ"
 category: how-to
 lang: en
-tags: [gradle, english, provided, scope, intellij, dependencies]
+tags: [gradle, in english, provided, scope, intellij, dependencies]
 ---
 While Gradle is a great building tool some concepts natural to a Maven user are not (yet ?) part of the basic package. One of them is the *provided* scope.
 

@@ -3,7 +3,7 @@ layout: post
 title: "Dynamic DNS update for Docker containers"
 description: "Implementation of dynamic dns for docker containers"
 category: how-to
-tags: [english, docker, python]
+tags: [in english, docker, python]
 ---
 
 A common way to access a Docker container *from the outside* is to use the publish ports options (`-P` or `-p`). However if you are running your containers with the default networking setup you can access the container ports directly by using the container IP address you can find using `docker inspect` on a running container. Although convenient this is hardly useable since the IP address is dynamically (read: *randomly*) assigned on the container startup. But there is still hope if you have a name server supporting dynamic updates.

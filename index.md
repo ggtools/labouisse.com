@@ -1,9 +1,8 @@
 ---
 layout: home
-excerpt: "A minimal Jekyll theme for your blog by designer Michael Rose."
-tags: [Jekyll, theme, responsive, blog, template]
+excerpt: "Le Journal de Christophe. Technical blog from a freelance Java Expert. In english mostly with some article en français. Development, Java, Docker, Unix"
+tags: [java, freelance, expert, developer, geek, unix, docker]
 image:
-  feature: sample-image-1.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+  feature: waves-tilt.jpg
+  credit: Christophe Labouisse
 ---

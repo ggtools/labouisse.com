@@ -41,8 +41,8 @@ owner:
     ad-client:
     ad-slot:
   bing-verify: AD361130081B30B4FE12990AFFD3A02A
-  github: #username
-  stackoverflow: #http://stackoverflow.com/users/123456/username
+  github: ggtools
+  stackoverflow: 565342/gabuzo
   linkedin: clabouisse
   instagram: #username
   lastfm: #username
@@ -52,6 +52,7 @@ owner:
   steam: #username
   dribbble: #username
   youtube: #username
+  hopwork: 51d057032a07e9483ddedfc7
   soundcloud: #username
 
 include: [".htaccess"]

@@ -3,7 +3,7 @@ layout: post
 title: "Deploying artifacts on Cloudbees with Gradle"
 description: "How to deploy artifacts on Cloudbees Maven repositories when you are using Gradle"
 category: how-to
-tags: [java, gradle, cloud, cloudbees, jenkins, english]
+tags: [java, gradle, cloud, cloudbees, jenkins, in english]
 lang: en
 comments: true
 ---
