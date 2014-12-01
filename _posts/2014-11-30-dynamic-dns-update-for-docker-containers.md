@@ -9,6 +9,7 @@ tags: [english, docker, python]
 A common way to access a Docker container *from the outside* is to use the publish ports options (`-P` or `-p`). However if you are running your containers with the default networking setup you can access the container ports directly by using the container IP address you can find using `docker inspect` on a running container. Although convenient this is hardly useable since the IP address is dynamically (read: *randomly*) assigned on the container startup. But there is still hope if you have a name server supporting dynamic updates.
 
 <!--more-->
+
 ## As a Docker administrator…
 
 As a Docker administrator I want a simple way to access the containers so that I won't have to use `docker inspect` and update gazillions of configuration files when I need to access unpublished container ports. The answer to this story will be to leverage the bind9 DNS server dynamic update feature to assign a fixed hostname to a Docker container every time it get started.
