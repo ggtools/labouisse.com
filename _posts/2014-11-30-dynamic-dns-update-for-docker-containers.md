@@ -26,9 +26,7 @@ I shamelessly based my implementation on a [very interesting post](http://object
   1. a `CNAME` record to defind the container name as an alias to the hostname
 
 
-And *voilà*.
-
-The script as well as some files to use it with [upstart](http://upstart.ubuntu.com/) are available on [github](https://github.com/ggtools/docker-tools).
+And *voilà*. The script as well as some files to use it with [upstart](http://upstart.ubuntu.com/) are available on [github](https://github.com/ggtools/docker-tools).
 
 
 ### Differences from Kelly's script
