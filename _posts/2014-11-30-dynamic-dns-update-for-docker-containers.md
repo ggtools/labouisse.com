@@ -11,7 +11,7 @@ A common way to access a Docker container *from the outside* is to use the publi
 <!--more-->
 ## As a Docker administrator…
 
-As a Docker administrator I want a simple way to access the containers so that I won't have to use `docker inspect` and update gazillions of configuration files when I need to access unpublished container ports. The answer to this story will be to leverage the bind9 DNS server dynamic update feature to assign a fixed hostname to a Docker container everytime it get started.
+As a Docker administrator I want a simple way to access the containers so that I won't have to use `docker inspect` and update gazillions of configuration files when I need to access unpublished container ports. The answer to this story will be to leverage the bind9 DNS server dynamic update feature to assign a fixed hostname to a Docker container every time it get started.
 
 ## Prerequisites
 
@@ -30,3 +30,8 @@ I shamelessly based my implementation on a [very interesting post](http://object
 And *voilà*.
 
 The script as well as some files to use it with [upstart](http://upstart.ubuntu.com/) are available on [github](https://github.com/ggtools/docker-tools).
+
+
+### Differences from Kelly's script
+
+With the exception of the implementation language the difference between Kelly's script and mine is the use of namespaces. The original script was using `ip netns` to make the DNS updates *from inside the container*. I removed this part as it was adding a great deal of complexity to the script and was not needed in my case. The other difference is the addition of the `CNAME` to be able to reference a container by its name in addition to the hostname.
