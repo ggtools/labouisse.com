@@ -5,8 +5,10 @@ tags: [about]
 modified: 2014-08-08T20:53:07.573882-04:00
 comments: false
 image:
-  feature: boston-night-tilt.jpg
-  credit: Christophe Labouisse
+  feature: about-me-regex.png
+  credit: Jex Cheng
+  creditlink: http://jex.im/regulex
+
 ---
 <div itemscope itemtype="http://data-vocabulary.org/Person">
 <p><span itemprop="name">Christophe Labouisse</span>
