@@ -4,6 +4,7 @@ title: About me
 tags: [about]
 modified: 2014-08-08T20:53:07.573882-04:00
 comments: false
+excerpt: "Christophe Labouisse, Freelance Java Expert, Lead Developper, Geek"
 image:
   feature: about-me-regex.png
   credit: Jex Cheng
