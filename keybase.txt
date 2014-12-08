@@ -1,0 +1,65 @@
+==================================================================
+https://keybase.io/clabouisse
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.labouisse.com
+  * I am clabouisse (https://keybase.io/clabouisse) on keybase.
+  * I have a public key with fingerprint AF03 78CE 6C5A F3C4 6C51  E7CE FB49 83B4 1AD2 5EC7
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "af0378ce6c5af3c46c51e7cefb4983b41ad25ec7",
+            "host": "keybase.io",
+            "key_id": "fb4983b41ad25ec7",
+            "uid": "ed71a4e4f546be8d2508875ff02bdb00",
+            "username": "clabouisse"
+        },
+        "service": {
+            "hostname": "www.labouisse.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1418024668,
+    "expire_in": 157680000,
+    "prev": "78cb77cdd90f19ef45d8d892d0ac7dc26f9b7ceca592e397dd67b7397c406627",
+    "seqno": 5,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG/MacGPG2 v2
+Comment: GPGTools - http://gpgtools.org
+
+owFtkVtIFFEYx/fihSRTEZIiJIauuK0zs3PbWaIeCo0kAsMog23mnDO7o+7MNjO7
+amYo5KJW2IMGRlFZKfhQBr1EL7FpXsou+BCVEUG0ZZC2FGFSdkasp87Ld873/b7/
+dznnct0Ol3NLeuxAS96rq85H9+dlx4G2qndNhKzDRkJsImrRklFULYSMqKFqFiES
+kkL6eAEgDrCS4gMMthTiAVJkxi/4ZIaSIM0iwBMeIqybdgaWkSUTeVUd+/AjqELs
+/Q8fWwogyFMSgxiFZTgZCThKCgLPKgpJy1AmSRs0kaFJEYRpUCfJekw1TUQ0ewjs
+j6sA2V3bxZeZ+vp67z/MC/QIlogauqUDvQ6Hw5YVFe1sqzG6hCM5uCwUlFUN4vFx
+QhwZpqprhEhhEliqrUwxlEDSDMcJHgI1RFUDBVWbYHlOIPGxy6A4lsQLk3keQOgn
+FcqPFIaFAhT8NCQlwENAc4pfxjsEEuunkc/PQ8jxMo8vgCE5jraXY6Jjmk6ILG5T
+CmFJUw1pkhUz8Nw5Hc51GQ6ny5GV6bJ/0JGzIv/vv3a/zl48stAbuHH8ZVPLw6nA
+B89IhlXzreBgkjrUyW4c3VAcbjhVpE3dKZsQ765svX1P7EzuNCP7qk6UOQuGxF3A
+fJYo6r5SmUm+6RuvaRHm3IN7zpTM9HoGOk6mFp7Tee1EcGtP7qbNib7+F6ubf498
+XnxbXfHj7OiacHdNl/GAKByYCOTH2tPpkvHqX4Wpjr2DPbOh3p/rLxjxa8kvp+Pn
+Wy8Vrx2edAXhKi+/I/2kIBCIz08fjh6dSSUbQqVdHyO1bZ86+eH9u295phcq8xLf
+Z69Pgnw9d1tl1dxXIZV9szCr+mJ5qfNp+HGdW1PD2UNjPcJl0s2Uv9+e6K+IZnX9
+AQ==
+=FdU3
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/clabouisse
+
+==================================================================
