@@ -48,6 +48,7 @@ A bunch of things are worth noticing:
 1. The *Type of information* has been changed to *Numeric (float)* since the script returning a number of seconds with a fractional part
 1. The *Store value* field has be changed to *Delta (speed per second)* in order to have Zabbix computing the actual CPU consumption during a time period
 1. The *Units* and *Use custom multiplier* had been changed to display something nice : 1 second CPU consumtion in a 1 second would mean a CPU usage of 100% that is one fully occupied core
+1. The *Type* field is set to *Zabbix agent* not to *Zabbix agent (active)* as the server should be querying the agent and not the opposite
 
 ## Creating Hosts
 
