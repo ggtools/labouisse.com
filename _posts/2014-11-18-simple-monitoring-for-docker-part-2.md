@@ -4,6 +4,7 @@ title: "Simple Monitoring for Docker (Part II)"
 description: "How to simply monitor Docker containers with a set of simple scripts and Zabbix (Part I: collecting data)"
 category: how-to
 tags: [in english, docker, zabbix, monitoring, shell, python]
+comments: true
 ---
 After the [first part]({% post_url 2014-11-17-simple-monitoring-for-docker-part-1 %}) we now have a couple of scripts able to extract some metrics from Docker containers. The next part will be to configure Zabbix to make use of those scripts to gather data and make awesome graphs.
 

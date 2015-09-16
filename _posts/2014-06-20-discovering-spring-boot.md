@@ -5,6 +5,7 @@ description: "My first feedback after attending a conference on Springboot"
 category: libraries
 lang: en
 tags: [java, in english, spring, spring boot]
+comments: true
 ---
 [Spring Boot](http://projects.spring.io/spring-boot/) is one of the latests projects of the Spring galaxy. I discovered at the [Bordeaux JUG](http://bordeauxjug.org/) during a [session]({% post_url 2014-05-26-des-applications-reactives-avec-spring4-angulardart-et-websocket %}) by Sébastien Deleuze. The main features are: creation of standalone applications, simplified configuration and fast startup but there is more.
 

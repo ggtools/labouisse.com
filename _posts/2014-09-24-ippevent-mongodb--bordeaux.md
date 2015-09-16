@@ -5,6 +5,7 @@ description: "Premier ippevent à Bordeaux avec Tugdual Grall"
 category: talks
 tags: [mongodb, en français, tgrall, ippevent]
 lang: fr
+comments: true
 ---
 À l'occasion du premier [Ippevent](http://blog.ippon.fr/inscription-aux-ippevents/) organisé sur Bordeaux [Ippon](http://www.ippon.fr/) avait invité [Tugdual Grall](https://twitter.com/tgrall) pour une présentation de MongoDB. Devant une salle comble composée en majorité de développeurs Java JEE,  Tugdual s'est livré à une présentation de deux heures qui s'est rapidement éloignée des slides au fil des questions du public. Mon résumé de faux débutant :
 

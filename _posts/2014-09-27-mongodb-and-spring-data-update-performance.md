@@ -4,6 +4,7 @@ title: "MongoDB and Spring Data Update Performance"
 description: "How Mongo DB access performance can be impacted by the way you access it"
 category: libraries
 tags: [in english, mongodb, spring, spring_data, java, update]
+comments: true
 ---
 [Spring Data](http://projects.spring.io/spring-data/) is a nice system to create repository without having to write a single line of code beyond an interface declaration. What's extra-nice is that Spring Data can work with different underlying persistence systems like JPA or MongoDB. I know Spring Data JPA to be quite effective but since RDMBS and Mongo DB are really different I wanted to see how Spring Data behaved with Mongo DB.
 

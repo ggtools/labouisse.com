@@ -4,6 +4,7 @@ title: "Simple Monitoring for Docker (Part I)"
 description: "How to simply monitor Docker containers with a set of simple scripts and Zabbix (Part I: collecting data)"
 category: how-to
 tags: [in english, docker, zabbix, monitoring, shell, python]
+comments: true
 ---
 Migrating from VMs to Docker containers is quite easy except for the monitoring part. A straightforward approach, running a data collecting agent (such as [Zabbix](http://www.zabbix.com) agent), is definitely a not a good solution as it goes against Docker's philosophy of having one clearly identified task in each container and also because it will require to use custom images. Starting with [Gathering LXC and Docker Containers Metrics](http://blog.docker.com/2013/10/gathering-lxc-docker-containers-metrics/) I came to a simple script based system to gather metrics from Docker containers.
 

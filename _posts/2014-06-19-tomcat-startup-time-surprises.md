@@ -5,6 +5,7 @@ description: "Tomcat can be slow to start, sometime"
 category: misc
 lang: en
 tags: [tomcat, entropy, docker, in english]
+comments: true
 ---
 While testing [Spring Boot](http://projects.spring.io/spring-boot/) I came on a very strange result: it was faster to start Spring Boot's *Hello World!* from a minimal Docker image than directly from the command line. I know that Docker is using containers which are way faster than full fledged virtual machines, it didn't make sense especially considering than on Mac OS X, the Docker daemon runs in a virtual machine.
 

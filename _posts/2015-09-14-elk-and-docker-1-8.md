@@ -5,6 +5,7 @@ modified: 2015-09-16T21:48:33+02:00
 categories: how-to
 tags: [in english, docker, docker-compose, elk, logstash, kibana, elasticsearch]
 date: 2015-09-14T17:18:33+02:00
+comments: true
 ---
 
 Starting with version 1.6, Docker introduced the ability to configure the log driver when creating a container. Using the `syslog` driver made it possible to push containers' log messages to the local syslog or even to a centralized ELK based system. There are some nice articles describing how to set up such a system like [this one](http://technologyconversations.com/2015/05/18/centralized-system-and-docker-logging-with-elk-stack/). Some nifty features introduced in version 1.8 made this system even better.

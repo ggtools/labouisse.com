@@ -5,6 +5,7 @@ description: "or: Why you should choose wisely your base image"
 category: how-to
 lang: en
 tags: [java, restx, in english, docker, linux]
+comments: true
 ---
 Sometime size does matter, for Godzilla of course but also for Docker images. I came across an interesting article this week-end about a [2 week experience with Docker](http://t37.net/is-docker-ready-for-production-feedbacks-of-a-2-weeks-hands-on.html) to see if it was production ready and a [follow-up](http://blog.loof.fr/2014/09/is-docker-ready-for-production.html) by Nicolas De Loof.
 
