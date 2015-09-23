@@ -3,7 +3,7 @@ layout: post
 title: "Android Annotations"
 description: "Présentation de la bibliothèque AndroidAnnotations"
 category: android
-lang: en
+lang: fr
 tags: [java, android, en français]
 comments: true
 ---
