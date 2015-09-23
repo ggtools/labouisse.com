@@ -7,6 +7,7 @@ excerpt:
 tags: []
 image:
   feature:
+comments: true
 ---
 
 <section id="table-of-contents" class="toc">

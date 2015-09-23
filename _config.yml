@@ -29,7 +29,7 @@ kramdown:
 owner:
   name: Christophe Labouisse
   avatar: bio-photo.jpg
-  bio: "Freelance Java expert"
+  bio: "Freelance Java expert, Docker enthusiast"
   email: consulting@labouisse.com
   disqus-shortname: clabouisse
   twitter: XtlCnslt
@@ -56,4 +56,4 @@ owner:
   soundcloud: #username
 
 include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+exclude: ["docker", "docker-compose.yml" ,"lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
