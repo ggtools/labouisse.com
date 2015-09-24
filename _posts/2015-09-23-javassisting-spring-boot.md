@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Javassisting Spring Boot"
-modified:
+modified: 2015-09-24T07:02:55+02:00
 categories: quicky
 tags: [in english, java, spring boot, spring-boot, javassist, byte code, instrumentation]
 image:
@@ -51,6 +51,15 @@ public class Warlock implements SpringApplicationRunListener {
     }
 }
 {% endhighlight %}
+
+Additionally, we need create (or update) the `META-INF/spring.factories` to *declare* this new listener:
+
+{% highlight properties %}
+# Run Listeners
+org.springframework.boot.SpringApplicationRunListener=\
+com.package.Warlock
+{% endhighlight %}
+
 
 At this point, this is not enough and the instrumentation is still failing with the same exception. The last tweak will be done in the `doBlackMagic` method:
 
