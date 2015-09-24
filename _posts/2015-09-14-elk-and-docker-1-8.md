@@ -149,7 +149,7 @@ This simple setup is a very good start but for real life applications we might w
 - keep multi line log messages such as stack traces in a single event
 - extract information from log messages such as the log severity
 
-In a coming article I'll improve the configuration for Spring boot applications.
+In the [next article]({% post_url 2015-09-23-elk-docker-and-spring-boot %}) I'll improve the configuration for Spring boot applications.
 
 <section id="table-of-contents" class="toc">
 <header>
