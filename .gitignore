@@ -6,4 +6,4 @@ _site
 codekit-config.json
 node_modules
 _asset_bundler_cache
-_posts/2013-*
+_posts/201[1-3]-*

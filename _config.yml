@@ -44,6 +44,7 @@ owner:
   github: ggtools
   stackoverflow: 565342/gabuzo
   linkedin: clabouisse
+  xing: #username
   instagram: #username
   lastfm: #username
   tumblr: #username
@@ -54,6 +55,9 @@ owner:
   youtube: #username
   hopwork: 51d057032a07e9483ddedfc7
   soundcloud: #username
+  weibo: #username
+  flickr: #username
+  codepen: #username
 
 include: [".htaccess"]
-exclude: ["docker", "docker-compose.yml" ,"lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+exclude: ["docker", "docker-compose.yml", "lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
