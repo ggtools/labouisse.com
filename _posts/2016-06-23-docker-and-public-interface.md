@@ -8,6 +8,10 @@ date: 2016-06-23T21:04:27+00:00
 ---
 When you install Docker on an Ubuntu server following the [instructions](https://docs.docker.com/engine/installation/linux/ubuntulinux/) you'll soon discover that all containers' published ports are reachable on all interfaces including the public ones. Until now I choose to use `--ip` to make Docker publish ports on a specific (private) interface but the inception of nifty features such has the [networks](https://docs.docker.com/engine/userguide/networking/) and the [swarm integration](https://docs.docker.com/engine/swarm/) in Docker 1.12 something new was definitely required. Hacking time has come …  
 
+## Important Note (July 1st, 2016)
+
+I discovered that restarting a container may (will?) make this useless as Docker engine rearranges the rules and put back its own chains first.
+
 ## The Docker/UFW issue
 
 When the docker engine publishes a port with the default configuration the proxies responsible for the publication listen to all interfaces as you can see by a simple `ps`:
