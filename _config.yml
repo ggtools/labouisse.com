@@ -64,4 +64,4 @@ owner:
   codepen: #username
 
 include: [".htaccess"]
-exclude: ["docker", "docker-compose.yml", "lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+exclude: ["docker-compose.yml", "Gemfile", "Gemfile.lock", "_octopress.yml", "LICENSE", "README.md", "docker/*"]

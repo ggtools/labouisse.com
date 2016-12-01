@@ -5,7 +5,7 @@ FROM ruby
 #     gem install --no-rdoc --no-ri github-pages && \
 #     rm -rf /var/lib/apt/lists/*
 
-RUN gem install --no-rdoc --no-ri github-pages
+# RUN gem install --no-rdoc --no-ri github-pages
 # RUN gem install --no-rdoc --no-ri blankslate -v 2.1.2.4
 # RUN gem install --no-rdoc --no-ri hitimes -v 1.2.2
 # RUN gem install --no-rdoc --no-ri timers -v 4.0.1
@@ -14,7 +14,9 @@ RUN gem install --no-rdoc --no-ri github-pages
 # RUN gem install --no-rdoc --no-ri classifier-reborn -v 2.0.3
 # RUN gem install --no-rdoc --no-ri
 
-ADD wrapper.sh /wrapper.sh
+COPY Gemfile wrapper.sh /
+
+RUN bundle install && bundle update
 
 WORKDIR /blog
 VOLUME /blog

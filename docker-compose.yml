@@ -4,3 +4,4 @@ www:
     - "4000:4000"
   volumes:
     - ./:/blog
+  env_file: .env
