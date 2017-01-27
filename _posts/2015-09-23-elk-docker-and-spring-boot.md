@@ -8,7 +8,7 @@ date: 2015-09-23T08:04:42+02:00
 comments: true
 ---
 
-In a [previous post](/how-to/2015/09/14/elk-and-docker-1-8/) I plugged Docker's logs into an ELK system using the brand new GELF plugin. The setup was simple and it was working great except for a couple of issues. This article will show how to improve the basic setup to better cope with *real life* logs, in my case the ones created by Spring Boot applications.
+In a [previous post](/how-to/2015/09/14/elk-and-docker-1-8) I plugged Docker's logs into an ELK system using the brand new GELF plugin. The setup was simple and it was working great except for a couple of issues. This article will show how to improve the basic setup to better cope with *real life* logs, in my case the ones created by Spring Boot applications.
 
 While this post focuses mainly on Spring Boot logs, it can be easily used for other logging systems in Java or any other languages at the cost of changing the regular expressions.
 

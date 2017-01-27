@@ -116,7 +116,7 @@ Sans AA le résultat serait nettement plus verbeux.
 
 ## Pour la fin
 
-Mon plus *grand* reproche à Android Annotations est lié à la manière dont il est implémenté. En effet lors du traitement des annotations, Android Annotations génère des classes filles avec un `_` à la fin. De ce fait tout ce qui reçoit une annotation doit être accessible par cette classe ce qui interdit d'utiliser les annotations sur des attributs ou des méthodes `private`. L'approche de [Lombok](/libraries/2014/05/28/retour-sur-lombok/) bien que plus complexe à mettre en œuvre est plus élégante.
+Mon plus *grand* reproche à Android Annotations est lié à la manière dont il est implémenté. En effet lors du traitement des annotations, Android Annotations génère des classes filles avec un `_` à la fin. De ce fait tout ce qui reçoit une annotation doit être accessible par cette classe ce qui interdit d'utiliser les annotations sur des attributs ou des méthodes `private`. L'approche de [Lombok](/libraries/2014/05/28/retour-sur-lombok) bien que plus complexe à mettre en œuvre est plus élégante.
 
 Et puis finalement Android Annotations marche très bien, trop bien même et finalement je me dis que j'aurais dû attendre un peu avant de l'utiliser pour souffrir encore un peu et pour mieux comprendre le fonctionnement intrisèque du développement Android. Au final j'aurais été nettement plus content de découvrir Android Annotations.
 
