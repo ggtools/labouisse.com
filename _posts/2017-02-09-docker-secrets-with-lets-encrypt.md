@@ -174,9 +174,13 @@ Letsencrypt and Docker secrets have a very similar philosophy with versionned im
 
 {% gist ggtools/a6a963be12e91c690e804bbdd5d4c053 %}
 
-This can be run using the `--post-hook` option or a more elaborate version could be run with `--rew-hook` option to update only the secrets from domains that have been actually updated.
-
 In a second step, we can *inspect* the service and automatically update the services using outdated certificates. The script will be a little be more complicated as we have to retrieve the full configuration to add the renewed certificates (target, uid, gid and mode). Also total automation might not be wanted as the service updates can be triggered at any time.
+
+A second script will check if the services are using the latest version of the certificates. While the first script is pretty harmless since it only creates new secrets, this one should be used with more care as all updated services will be restarted. In order to mitigate this problem the script will only look for service with the `le_auto` label:
+
+{% gist ggtools/467f98fa65ea588d568eea195b6c17ef %}
+
+In a full automated environment, both scripts could be run from Cerbot using the `--post-hook` option.
 
 <section id="table-of-contents" class="toc">
 <header>
