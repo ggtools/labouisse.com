@@ -48,7 +48,7 @@ Similarly, the `docker service update` commands have `--service-rm` and `--servi
 
 ## Let's Encrypt
 
-Before talking about the integration with Docker secrets, let's have a closer look at how Letsencrypt is actuall working. 
+Before talking about the integration with Docker secrets, let's have a closer look at how Letsencrypt is actually working. 
 
 There are many ways of using Letsencrypt in this article I'll be considering only the use of [Cerbot](https://certbot.eff.org). To add more restriction, I've only tested this with the *standalone* plugin while I'm pretty sure it'll also work with the *webroot* plugin as well.
 
